@@ -87,12 +87,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="概述本文档内容包括 Easyui 的引入和 Easyui 的使用实践，编写该文档的目的，主要为了给下次需要使用的 Easyui 的同事做参考，提高开发效率。
+EasyUI 的引入说明Jquery 库引用项目中使用 EasyUI 版本为 1.3.3 版本其中中自带了 Jquery 的库，版本 是V2.0.0 ，请注意该版本不一定适用于你的项目场景，关于 Jquery V2.0.0 对IE浏览器的支持">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Easyui 使用总结">
+<meta property="og:url" content="http://yoursite.com/2017/03/27/Easyui-使用总结/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="概述本文档内容包括 Easyui 的引入和 Easyui 的使用实践，编写该文档的目的，主要为了给下次需要使用的 Easyui 的同事做参考，提高开发效率。
+EasyUI 的引入说明Jquery 库引用项目中使用 EasyUI 版本为 1.3.3 版本其中中自带了 Jquery 的库，版本 是V2.0.0 ，请注意该版本不一定适用于你的项目场景，关于 Jquery V2.0.0 对IE浏览器的支持">
+<meta property="og:updated_time" content="2017-03-27T12:40:32.840Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Easyui 使用总结">
+<meta name="twitter:description" content="概述本文档内容包括 Easyui 的引入和 Easyui 的使用实践，编写该文档的目的，主要为了给下次需要使用的 Easyui 的同事做参考，提高开发效率。
+EasyUI 的引入说明Jquery 库引用项目中使用 EasyUI 版本为 1.3.3 版本其中中自带了 Jquery 的库，版本 是V2.0.0 ，请注意该版本不一定适用于你的项目场景，关于 Jquery V2.0.0 对IE浏览器的支持">
 
 
 
@@ -120,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/27/Easyui-使用总结/"/>
 
 
 
 
 
-  <title> Hexo </title>
+  <title> Easyui 使用总结 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -151,9 +158,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -236,9 +241,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -268,10 +273,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/03/27/Easyui-使用总结/" itemprop="url">
-                  Easyui 使用总结
-                </a>
+                Easyui 使用总结
               
             
           </h1>
@@ -322,9 +324,7 @@
       
 
       
-        
-          
-            <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文档内容包括 Easyui 的引入和 Easyui 的使用实践，编写该文档的目的，主要为了给下次需要使用的 Easyui 的同事做参考，提高开发效率。</p>
+        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文档内容包括 Easyui 的引入和 Easyui 的使用实践，编写该文档的目的，主要为了给下次需要使用的 Easyui 的同事做参考，提高开发效率。</p>
 <h2 id="EasyUI-的引入说明"><a href="#EasyUI-的引入说明" class="headerlink" title="EasyUI 的引入说明"></a>EasyUI 的引入说明</h2><h3 id="Jquery-库引用"><a href="#Jquery-库引用" class="headerlink" title="Jquery 库引用"></a>Jquery 库引用</h3><p>项目中使用 EasyUI 版本为 1.3.3 版本其中中自带了 Jquery 的库，版本 是V2.0.0 ，请注意该版本不一定适用于你的项目场景，关于 Jquery V2.0.0 对IE浏览器的支持也是每一个开发人员需要注意的。 Jquery V2.0.0 支 IE9+ 。为了统一项目中的  Jquery 版本，所以就把 Easyui 自带的 Jquery 版本换成项目中使用的版本 1.7.2。</p>
 <h3 id="关于-Easyui-包目录结构调整说明"><a href="#关于-Easyui-包目录结构调整说明" class="headerlink" title="关于 Easyui 包目录结构调整说明"></a>关于 Easyui 包目录结构调整说明</h3><p>通常从 Jquery-Easyui 官网中下载下来的包，是一个相当完整的包其中包括一下文件夹及目录：</p>
 <p>demo 目录是 Easyui 使用示例；</p>
@@ -455,20 +455,27 @@ table.datagrid({
 </ol>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p> 这篇文章只是简单记录 Easyui 大概的入门及个别控件的简单用法，具体还是需要大家多实践、多差api，后期还会有问题总结更新。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -476,354 +483,38 @@ table.datagrid({
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/27/activeMq引入之后日志问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/03/27/activeMq引入之后日志问题/" rel="next" title="activeMq引入之后日志问题">
+                <i class="fa fa-chevron-left"></i> activeMq引入之后日志问题
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2017/03/27/activeMq引入之后日志问题/" itemprop="url">
-                  activeMq引入之后日志问题
-                </a>
-              
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-27T17:58:46+08:00">
-                2017-03-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="记录一次解决引入-Activemq-之后日志冲突问题"><a href="#记录一次解决引入-Activemq-之后日志冲突问题" class="headerlink" title="记录一次解决引入 Activemq 之后日志冲突问题"></a>记录一次解决引入 Activemq 之后日志冲突问题</h2><h3 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h3><p>最近项目中引入了 Activemq 进行消息的推送。开始运行正常也没有发现有什么问题，有一次看控制台日志时发现有点问题<br>SLF4J: Class path contains multiple SLF4J bindings.<br>经过了解发现同事在引入 Activemq 时使用</p>
-<pre><code>&lt;dependency&gt;
-         &lt;groupId&gt;org.apache.activemq&lt;/groupId&gt;
-         &lt;artifactId&gt;activemq-all&lt;/artifactId&gt;
-        &lt;version&gt;5.14.3&lt;/version&gt;
-&lt;/dependency&gt;
-</code></pre><p>的方式，因为项目中本来就使用了 slf4j-log4j12 记录日志，而 Activemq 本身也使用了这套日志框架，从而出现日志冲突问题。<br>此时，服务器会根据自己的规则去选择一种方式进行日志记录，这样的话就会存在日志丢失问题。</p>
-<h3 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h3><h4 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h4><p>使用 maven 的 exclusions 功能。就是在引入 Activemq 时，把项目中的日志 jar 包包起来，这样做就可以使得Activemq 使用项目中存在的日志 jar 。<br>配置如下：</p>
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;org.apache.activemq&lt;/groupId&gt;
-    &lt;artifactId&gt;activemq-all&lt;/artifactId&gt;
-    &lt;version&gt;5.14.3&lt;/version&gt;
-    &lt;exclusions&gt;
-      &lt;exclusion&gt; 
-        &lt;groupId&gt;org.slf4j&lt;/groupId&gt;
-        &lt;artifactId&gt;slf4j-log4j12&lt;/artifactId&gt;
-      &lt;/exclusion&gt;
-      &lt;exclusion&gt; 
-        &lt;groupId&gt;log4j&lt;/groupId&gt;
-        &lt;artifactId&gt;log4j&lt;/artifactId&gt;
-      &lt;/exclusion&gt;
-    &lt;/exclusions&gt;
-&lt;/dependency&gt;
-</code></pre><p>这样配置之后重新测试。发现问题还是存在。slf4j 官网也是这样建议解决包冲突问题的，但在这里就没有效果。<br><strong>原来 activemq-all 使用的pom中使用了maven-plugin：maven-shade-plugin，来构建jar包，导致 exclusion 无法使用！！</strong><br>所以这种方式无效</p>
-<blockquote>
-<p>参考 <a href="https://www.slf4j.org/codes.html" target="_blank" rel="external">https://www.slf4j.org/codes.html</a></p>
-<h4 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h4><p>不依赖 activemq-all.jar ，而是单独依赖 Activemq 的原生 jar 。<br>那么 Activemq 中主要分为那些包，请参考：<br><a href="http://activemq.apache.org/version-5-initial-configuration.html" target="_blank" rel="external">http://activemq.apache.org/version-5-initial-configuration.html</a></p>
-</blockquote>
-<ul>
-<li>activemq-broker.jar</li>
-<li>activemq-client.jar</li>
-<li>activemq-kahadb-store.jar</li>
-<li>activemq-spring.jar</li>
-<li>hawtbuf-1.11.jar</li>
-<li>slf4j-api.jar</li>
-<li>slf4j-log4j12.jar</li>
-<li>log4j-1.2.17.jar</li>
-<li>J2EE APIs which could be the j2ee.jar from Sun or your J2EE container or you could use Geronimo’s freely distributable geronimo-spec-j2ee.jar. If you are inside a servlet container and being dependent on the j2ee.jar causes you troubles, the parts of the J2EE jar we are dependent on are as follows…</li>
-<li>geronimo-spec-jms.jar</li>
-<li>geronimo-spec-jta.jar</li>
-<li>geronimo-spec-j2ee-management.jar</li>
-<li><p>If you want to grab a J2EE specification jar we recommend the Apache repository<br>网上有些帖子每个人指明的依赖jar都不一样，这里还是以官网文档为准。</p>
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
-    &lt;artifactId&gt;spring-beans&lt;/artifactId&gt;
-    &lt;version&gt;4.1.4.RELEASE&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;dependency&gt;
-    &lt;groupId&gt;org.apache.activemq&lt;/groupId&gt;
-    &lt;artifactId&gt;activemq-spring&lt;/artifactId&gt;
-    &lt;version&gt;5.14.3&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;dependency&gt;
-    &lt;groupId&gt;org.apache.activemq&lt;/groupId&gt;
-    &lt;artifactId&gt;activemq-kahadb-store&lt;/artifactId&gt;
-    &lt;version&gt;5.14.3&lt;/version&gt;
-&lt;/dependency&gt;
-
-&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
-    &lt;artifactId&gt;spring-context&lt;/artifactId&gt;
-    &lt;version&gt;4.1.4.RELEASE&lt;/version&gt;
-&lt;/dependency&gt;
-</code></pre></li>
-</ul>
-<pre><code> &lt;dependency&gt; 
-    &lt;groupId&gt;org.apache.activemq&lt;/groupId&gt;
-    &lt;artifactId&gt;activemq-broker&lt;/artifactId&gt;
-    &lt;version&gt;5.14.3&lt;/version&gt;
-&lt;/dependency&gt;
-
-&lt;dependency&gt;
-    &lt;groupId&gt;org.apache.activemq&lt;/groupId&gt;
-    &lt;artifactId&gt;activemq-client&lt;/artifactId&gt;
-    &lt;version&gt;5.14.3&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;dependency&gt;
-    &lt;groupId&gt;org.fusesource.hawtbuf&lt;/groupId&gt;
-    &lt;artifactId&gt;hawtbuf&lt;/artifactId&gt;
-    &lt;version&gt;1.11&lt;/version&gt;
-&lt;/dependency&gt;
-
-&lt;dependency&gt;
-    &lt;groupId&gt;org.apache.geronimo.specs&lt;/groupId&gt;
-    &lt;artifactId&gt;geronimo-jms_1.1_spec&lt;/artifactId&gt;
-    &lt;version&gt;1.1.1&lt;/version&gt;
-&lt;/dependency&gt;
-&lt;dependency&gt;
-    &lt;groupId&gt;org.apache.geronimo.specs&lt;/groupId&gt;
-    &lt;artifactId&gt;geronimo-j2ee-management_1.1_spec&lt;/artifactId&gt;
-    &lt;version&gt;1.0.1&lt;/version&gt;
-&lt;/dependency&gt;
-</code></pre><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>这个过程中还需要注意 jar 包的重复引入问题。<br> activemq-spring.jar 这个和 activemq-core.jar  重复。如果两个包都引入会出现部分类创建错误。这个需要不断的测试才能解决。<br> 看完配置文件你可能会注意多了两个 spring 相关的 jar 包。如果项目中已经引入就不用重复引入了，如果没有则需要加上。否则初始化时就会报错。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/27/这是我的第一篇博客，以后我会经常写/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/27/这是我的第一篇博客，以后我会经常写/" itemprop="url">
-                  这是我的第一篇博客，以后我会经常写
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-27T17:57:13+08:00">
-                2017-03-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="希望以后坚持写作"><a href="#希望以后坚持写作" class="headerlink" title="希望以后坚持写作"></a>希望以后坚持写作</h2>
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -831,6 +522,10 @@ table.datagrid({
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -850,8 +545,17 @@ table.datagrid({
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -895,6 +599,22 @@ table.datagrid({
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#EasyUI-的引入说明"><span class="nav-number">2.</span> <span class="nav-text">EasyUI 的引入说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Jquery-库引用"><span class="nav-number">2.1.</span> <span class="nav-text">Jquery 库引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于-Easyui-包目录结构调整说明"><span class="nav-number">2.2.</span> <span class="nav-text">关于 Easyui 包目录结构调整说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-Easyui-需要引用的-js-和-css"><span class="nav-number">2.3.</span> <span class="nav-text">使用 Easyui 需要引用的 js 和 css</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#js-和-css-文件说明："><span class="nav-number">3.</span> <span class="nav-text">js 和 css 文件说明：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于-Easyui-控件的使用"><span class="nav-number">4.</span> <span class="nav-text">关于 Easyui 控件的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#控件组成部分"><span class="nav-number">4.1.</span> <span class="nav-text">控件组成部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控件的继承特性"><span class="nav-number">4.2.</span> <span class="nav-text">控件的继承特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调用控件的方法"><span class="nav-number">4.3.</span> <span class="nav-text">调用控件的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改控件的属性"><span class="nav-number">4.4.</span> <span class="nav-text">修改控件的属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控件事件的注册"><span class="nav-number">4.5.</span> <span class="nav-text">控件事件的注册</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于-Datagrid"><span class="nav-number">5.</span> <span class="nav-text">关于 Datagrid</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Datagrid-中列表宽度的设置建议"><span class="nav-number">5.1.</span> <span class="nav-text">Datagrid 中列表宽度的设置建议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于editor的使用说明"><span class="nav-number">5.2.</span> <span class="nav-text">关于editor的使用说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1002,6 +722,10 @@ table.datagrid({
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
